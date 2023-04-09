@@ -1,3 +1,4 @@
+import 'package:coba/second_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -25,6 +26,11 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: Center(child: TextButton(onPressed: () {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => const SecondScreen()));
+      }, child: const Text('Go to Second Screen')),),
+    );
   }
 }
