@@ -29,7 +29,9 @@ class HomePage extends StatelessWidget {
       body: Center(child: TextButton(onPressed: () {
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => const SecondScreen()));
-      }, child: const Text('Go to Second Screen')),),
+      }, child: const Text('Go to Second Screen'),
+      ),
+      ),
     );
   }
 }
