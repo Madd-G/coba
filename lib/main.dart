@@ -1,3 +1,4 @@
+import 'package:coba/fifth_screen.dart';
 import 'package:coba/second_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const FifthScreen(),
     );
   }
 }
@@ -27,11 +28,14 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Center(child: TextButton(onPressed: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => const SecondScreen()));
-      }, child: const Text('Go to Second Screen'),
-      ),
+      body: Center(
+        child: TextButton(
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const SecondScreen()));
+          },
+          child: const Text('Go to Second Screen'),
+        ),
       ),
     );
   }
