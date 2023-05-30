@@ -7,7 +7,7 @@ class FifthScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text('Fifth Screen'),
+        child: Text('Fifth Screen', style: TextStyle(color: Colors.red),),
       ),
     );
   }
